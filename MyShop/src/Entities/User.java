@@ -51,6 +51,27 @@ public class User {
                 "Email: " + this.getEmail();
     }
 
+    public void setFirstName(String firstName) {
+        if(firstName.trim() == "" && firstName == null) {
+            return;
+        }
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        if(lastName.trim() == "" && lastName == null) {
+            return;
+        }
+        this.lastName = lastName;
+    }
+
+    public void setEmail(String email) {
+        if(email.trim() == "" && email == null) {
+            return;
+        }
+        this.email = email;
+    }
+
     public void setPassword(String password) {
         if (password == null) {
             return;
