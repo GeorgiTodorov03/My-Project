@@ -1,8 +1,9 @@
 package MyShop.Enteties.impl;
 
 import MyShop.Annotations.Validate;
+import MyShop.Enteties.User;
 
-public class DefaultUser {
+public class DefaultUser implements User {
     private static int userCounter = 0;
 
     private int id;

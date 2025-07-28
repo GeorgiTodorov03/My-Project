@@ -44,7 +44,7 @@ public class DefaultUserStoringService implements UserStoringService {
     }
 
     @Override
-    public List<DefaultUser> loadUsers() {
+    public List<User> loadUsers() {
         try (var stream = Files
                 .lines(Paths.get(RESOURCES_FOLDER, CURRENT_TASK_RESOURCE_FOLDER, USER_INFO_STORAGE))) {
             return stream.filter(Objects::nonNull)

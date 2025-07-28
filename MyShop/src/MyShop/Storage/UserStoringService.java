@@ -9,5 +9,5 @@ public interface UserStoringService {
 
     void saveUser(User user);
 
-    List<DefaultUser> loadUsers();
+    List<User> loadUsers();
 }
